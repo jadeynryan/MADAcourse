@@ -648,7 +648,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">Modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">2023-12-09</p>
+      <p class="date-modified">2023-12-11</p>
     </div>
   </div>
     
@@ -711,7 +711,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">'DSAIDE'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>This installs a package that gives you access to various infectious disease simulation models. We won’t do anything with that package in this course, we just install it for practice. If you want to learn more about DSAIDE, <a href="https://ahgroup.github.io/DSAIDE/">take a look at the package website</a>.</p>
+<p>This installs a package that gives you access to various infectious disease simulation models. We won’t do anything with that package in this course, we just install it for practice. If you want to learn more about DSAIDE, take a look at the <a href="https://ahgroup.github.io/DSAIDE/">package website</a>.</p>
 <p>If this is the first time you are installing packages, you’ll see that a lot of other packages are installed, too. You might get a message about <em>Installing from source packages that need compilation</em>. You should generally say <strong>No</strong> to this. If you are on a Windows computer, compilation requires you to have <a href="https://cran.r-project.org/bin/windows/Rtools/">Rtools installed</a>. It’s not a bad idea to install Rtools (if you do, make sure you pick the version that matches your <code>R</code> version.) But even then, or if you use a Mac or Linux (which have the equivalent of Rtools already pre-installed) sometimes the compilation doesn’t work. So if you have a choice, say <strong>No</strong>. (On some Mac/Linux setups, things happen automatically, then just let it run.)</p>
 <p>To see which packages are needed by a specific package, e.g.&nbsp;<code>DSAIDE</code>, and thus are being installed if not present, type <code>tools::package_dependencies("DSAIDE")</code> into the R console. Of course it can be that those packages depend on other packages, so you end up installing even more. At some point, you’ll have the most common packages all installed and installing new packages will lead to less overall installing. The package install process generally works well.</p>
 <p>In RStudio, you can also install (and update/remove) packages by clicking on the <code>Packages</code> tab in the bottom right window.</p>
@@ -733,7 +733,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="learning-r-studio" class="level1">
 <h1>Learning R Studio</h1>
-<p>If you are new to R and RStudio and want to learn a bit more, I suggest you skim through this <a href="https://rafalab.github.io/dsbook/getting-started.html">chapter of IDS</a>.</p>
+<p>If you are new to R and RStudio and want to learn a bit more, I suggest you skim through this <a href="https://rafalab.github.io/dsbook/getting-started.html">chapter of <em>IDS</em></a>.</p>
 <p>While one can use R and do pretty much every task, including all the ones we cover in this class, without using RStudio. However, RStudio is very useful; it has a lot of features that make your R coding life easier. It has become pretty much the default integrated development environment (IDE) for R. Since RStudio has lots of features, it takes time to learn them. A good resource to learn more about RStudio are the <a href="https://resources.rstudio.com/">R Studio Essentials</a> collection of videos.</p>
 
 

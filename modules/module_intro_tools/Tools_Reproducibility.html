@@ -615,7 +615,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">2023-12-09</p>
+      <p class="date-modified">2023-12-11</p>
     </div>
   </div>
     
@@ -646,10 +646,8 @@ ul.task-list li input[type="checkbox"] {
 <h1>Reproducibility in Science</h1>
 <p>A hallmark of proper scientific research is that findings can be replicated/reproduced. Unfortunately, it is often the case these days that results can’t be replicated/reproduced by independent investigators/labs. Sometimes, even the same labs can’t reproduce their previous findings. You have probably heard about the (supposed) <em>Reproducibility Crisis</em> in science. If not, do a quick online search, you’ll find lots of articles saying there is an increasing problem, while others saying that it’s not getting worse, we are just detecting more. While sometimes there is fraud, most often there are more benign reasons preventing reproducibility.</p>
 <p>This video provides a short discussion of some of the current problems with reproducibility in science:</p>
-<p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/VcgO2v3JjCU" frameborder="0" allowfullscreen="">
 </iframe>
-</p>
 </section>
 <section id="reproducibility-of-analyses" class="level1">
 <h1>Reproducibility of Analyses</h1>
@@ -657,11 +655,9 @@ ul.task-list li input[type="checkbox"] {
 <p>To make a fully reproducible analysis, you have to provide all the data and code, and the generation of results (figures and tables) needs to be fully automated. The scientific community is moving toward more reproducibility and transparency (e.g., mandating public access to data, computer code, etc.). An increasing number of funding agencies and journals require access to data and code.</p>
 <p>While there is a strong movement toward <em>Open Access</em>, providing all the data is not always possible. However, the full automation of data processing, analysis, and result generation is always possible, and we will use this approach.</p>
 <p>In this video, <a href="http://www.biostat.jhsph.edu/~rpeng/">Roger Peng</a> goes into some more details of the concept of reproducible research:</p>
-<p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/DfBSiOupI1I" frameborder="0" allowfullscreen="">
 </iframe>
-</p>
-<p>Roger Peng has additional videos related to reproducible research, <a href="https://www.youtube.com/playlist?list=PLjTlxb-wKvXOU4WW4p3qc4VKWTI4gLNUf">a playlist of those videos can be found here.</a></p>
+<p>Roger Peng has additional videos related to reproducible research in this <a href="https://www.youtube.com/playlist?list=PLjTlxb-wKvXOU4WW4p3qc4VKWTI4gLNUf">playlist of videos</a></p>
 </section>
 <section id="how-to-do-a-reproducible-analysis" class="level1">
 <h1>How to do a reproducible analysis</h1>
@@ -683,7 +679,7 @@ ul.task-list li input[type="checkbox"] {
 <p>While there are different tools and programming languages that allow reproducible research (e.g.&nbsp;Jupyter notebooks in Python, Mathematica notebooks, Sweave, Latex), we will focus on one tool, namely the <a href="https://quarto.org/">Quarto system</a>. (GitHub is also part of this reproducible workflow, but we discuss that separately).</p>
 <p>The folks from Posit (formerly Rstudio) previously developed <a href="http://rmarkdown.rstudio.com/">R Markdown</a>. This allowed you to combine R code with Markdown text. More recently, they developed <a href="https://quarto.org/">Quarto</a>, which is an improved version of the whole system that allows using different programming languages and creating many different types of outputs (papers, presentations, websites, etc.).</p>
 <p>R Markdown is still around and functional. For instance, this course website is written in R Markdown and <a href="https://github.com/andreashandel/MADAcourse">lives on GitHub</a>. But in my opinion, Quarto is the future. We’ll therefore focus on using it. Eventually I’ll switch all my materials over to Quarto. The good thing is that the transition is easy.</p>
-<p>The idea behind Quarto is that you have a system that allows you to combine code with text and simple formatting to easily and reproducibly turn them into a lot of different output formats, e.g., HTML, PDF, Word, or slides. You can apply layout and styling to those documents, which is done separately from the content. This means you can quickly switch between outputs. Quarto <a href="https://quarto.org/docs/get-started/hello/rstudio.html#how-it-works">calls various other pieces of software</a> to - almost magically - turn text and code input into a variety of different output formats. The good thing is, you generally don’t need to care what goes on under the hood, it all happens (almost always) smoothly behind the scenes.</p>
+<p>The idea behind Quarto is that you have a system that allows you to combine code with text and simple formatting to easily and reproducibly turn them into a lot of different output formats, e.g., HTML, PDF, Word, or slides. You can apply layout and styling to those documents, which is done separately from the content. This means you can quickly switch between outputs. Quarto calls <a href="https://quarto.org/docs/get-started/hello/rstudio.html#how-it-works">various other pieces of software</a> to - almost magically - turn text and code input into a variety of different output formats. The good thing is, you generally don’t need to care what goes on under the hood, it all happens (almost always) smoothly behind the scenes.</p>
 <p>The input (for us) into a Quarto document are <code>R</code> code and Markdown text. Markdown is a simple way of formatting text to get some reasonably nice layouts with minimal effort. If you have no experience with Markdown, I suggest you go through this nice, short <a href="https://www.markdowntutorial.com/">interactive tutorial</a>. A good reference to look up formatting for Markdown until you have it memorized is this <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">online cheat sheet</a>.</p>
 <p><strong>Quarto and R Markdown Note:</strong> Quarto is fairly new. It didn’t exist yet last time I taught the course. I’m switching to Quarto because I think it’s the future. But you might still find me talking about R Markdown in some places. If you do, let me know so I can update. In general, either R Markdown or Quarto will do the job, but Quarto is the future, so it’s best to use/learn it.</p>
 </section>
@@ -700,7 +696,7 @@ ul.task-list li input[type="checkbox"] {
 <h1>Other reproducibility tips</h1>
 <p>We’ll cover that more later, but it is important to not do things that only work on your computer but not on others. The most important and frequent mistake I see is someone using a local path. If you load data from <code>C:\Users\myname\mydata</code> then it won’t work for me. Always load/save data relative to the project folder. The <a href="https://here.r-lib.org/"><code>here</code> R package</a> and its associated <code>here()</code> command in R is very useful. You’ll see it show up and you should use it.</p>
 <p>Another good idea is to start your R code with <code>use_blank_slate()</code> from the <a href="https://usethis.r-lib.org/"><code>usethis</code> R package</a>.</p>
-<p>For some more background on this, see the <a href="https://www.tidyverse.org/blog/2017/12/workflow-vs-script/">Tidyverse article</a> by Jenny Bryan, co-author of both the <code>here</code> and <code>usethis</code> packages.</p>
+<p>For some more background on this, see the <a href="https://www.tidyverse.org/blog/2017/12/workflow-vs-script/"><code>tidyverse</code> article</a> by Jenny Bryan, co-author of both the <code>here</code> and <code>usethis</code> packages.</p>
 
 
 </section>

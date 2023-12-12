@@ -618,7 +618,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">2023-12-09</p>
+      <p class="date-modified">2023-12-11</p>
     </div>
   </div>
     
@@ -668,9 +668,9 @@ ul.task-list li input[type="checkbox"] {
 <h1>Model Interpretation</h1>
 <p>A nice feature of using subset selection or LASSO with GLMs, or fitting a single tree, is that the algorithm decides which predictor variables are important, and throws out the remaining ones. For the ones that stay in the model, we can look at the coefficients in front of each predictor variable, or look at the final tree/decision diagram, to assess the importance of individual predictor variables on the outcome. This provides an easy way to understand <em>how</em> specific variables influence the outcome.</p>
 <p>Those simple approaches are not available anymore for more complex models. With complex models, we generally give up interpretability in exchange for better performance. However, we ideally want both. The last several years have seen a good amount of development to come up with methods that allow one to peek inside the black box, i.e.&nbsp;to understand why and how a complex model makes its predictions, and what the role of specific predictor variables is on the outcome. This area is generally called <em>interpretable machine learning</em>.</p>
-<p>There’s no point in me repeating what others have already said (much better than I could) 😃, therefore, instead of me writing more on this, please take a look at <a href="https://christophm.github.io/interpretable-ml-book/">chapters 2 and 3 of the <em>Interpretable Machine Learning (IML) book</em></a>, which gives a very nice introduction on this topic. As you can tell by the title, the whole book is about interpretation of machine learning methods, and is a great resource.</p>
-<p>For a shorter, but also great resource, check out <a href="https://bradleyboehmke.github.io/HOML/iml.html">chapter 16 of HMLR</a>, which provides both a quick introduction and overview to the topic, and lists and illustrates the use of several R packages to do various interpretation tasks.</p>
-<p>Another good introduction is <a href="https://www.tmwr.org/explain.html">Chapter 18 of <em>Tidy Modeling with R</em></a>.</p>
+<p>There’s no point in me repeating what others have already said (much better than I could) 😃, therefore, instead of me writing more on this, please take a look at <a href="https://christophm.github.io/interpretable-ml-book/">chapters 2 and 3 of the <em>Interpretable Machine Learning (IML)</em> book</a>, which gives a very nice introduction on this topic. As you can tell by the title, the whole book is about interpretation of machine learning methods, and is a great resource.</p>
+<p>For a shorter, but also great resource, check out <a href="https://bradleyboehmke.github.io/HOML/iml.html">chapter 16 of <em>HMLR</em></a>, which provides both a quick introduction and overview to the topic, and lists and illustrates the use of several R packages to do various interpretation tasks.</p>
+<p>Another good introduction is <a href="https://www.tmwr.org/explain.html">chapter 18 of <em>Tidy Modeling with R</em></a>.</p>
 <p>As models get more complex, making sense of them will increase in importance. Even if you are mainly interested in predictive performance and less on understanding your system, it is a good idea to investigate your model in some detail. You might often figure out things that can help further increase model performance. Also, without understanding at least to some extent how complex models make their predictions, the potential for unnoticed bias increases. A good example of this can be found <a href="https://science.sciencemag.org/content/366/6464/447">in this very recent Science paper</a> which describes racial bias in a machine learning model that tries to predict healthcare needs of patients. See also <a href="https://science.sciencemag.org/content/366/6464/421">Ruha Benjamin’s commentary</a> on the article. Thus, this area of interpreting results from complex models will likely see much development in the near future, hopefully leading to models that are both powerful (and thus likely complex) and interpretable.</p>
 <p>Given how easy it is to apply some of these methods to your models, I recommend that if you decide to use a somewhat complex model (or even a not-so complex one), you should always do at least some analyses that probe the model, e.g.&nbsp;perform a variable importance analysis and related investigations as described in the references above.</p>
 </section>
@@ -682,7 +682,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="further-learning" class="level1">
 <h1>Further learning</h1>
-<p>In addition to the sources mentioned above, other good reads are the <a href="https://www.tmwr.org/performance.html"><em>Judging model effectiveness</em> chapter</a> and the <a href="https://www.tmwr.org/trust.html"><em>When should you trust your predictions?</em> chapter</a> of TMWR.</p>
+<p>In addition to the sources mentioned above, other good reads are the <a href="https://www.tmwr.org/performance.html"><em>Judging model effectiveness</em></a> and <a href="https://www.tmwr.org/trust.html"><em>When should you trust your predictions?</em></a> chapters of TMWR.</p>
 
 
 </section>

@@ -296,7 +296,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">Modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">2023-12-05</p>
+      <p class="date-modified">2023-12-11</p>
     </div>
   </div>
     
@@ -351,7 +351,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="processing-data" class="level2">
 <h2 class="anchored" data-anchor-id="processing-data">Processing data</h2>
 <div class="note">
-<p>You can accomplish the next steps (and pretty much anything) with just basic R commands and not using extra functionality from packages. However, things are often easier with packages. For data processing tasks, the packages from <a href="">the tidyverse</a> are very useful. You can do the following tasks with any commands/packages you like.</p>
+<p>You can accomplish the next steps (and pretty much anything) with just basic R commands and not using extra functionality from packages. However, things are often easier with packages. For data processing tasks, the packages from the <a href="https://www.tidyverse.org/"><code>tidyverse</code></a> are very useful. You can do the following tasks with any commands/packages you like.</p>
 </div>
 <p>Write code that assigns only the African countries to a new object/variable called <code>africadata</code>. Run <code>str</code> and <code>summary</code> on the new object you created. You should now have 2907 observations, down from 10545. Depending on how you do this, you might also notice that all the different categories are still kept in the <code>continent</code> (and other) variables, but show 0. R does not automatically remove categories of what in R is called a factor variable (a categorical variable) even if they are empty. We don’t have to worry about that just now, but something to keep in mind, it can sometimes lead to strange behavior.</p>
 <p>Take the <code>africadata</code> object and create two new objects (name them whatever you want), one that contains only <code>infant_mortality</code> and <code>life_expectancy</code> and one that contains only <code>population</code> and <code>life_expectancy</code>. You should have two new objects/variables with 2907 rows and two columns. Use the <code>str</code>, and <code>summary</code> commands to take a look at both.</p>

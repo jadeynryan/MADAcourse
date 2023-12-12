@@ -617,7 +617,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">2023-12-02</p>
+      <p class="date-modified">2023-12-11</p>
     </div>
   </div>
     
@@ -649,19 +649,19 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="time-series-data" class="level1">
 <h1>Time-series data</h1>
-<p>Time series are a specialized data type that are autocorrelated, and we can therefore get better predictions by using specialized models that take this data structure into account. A good resource is the free textbook <a href="https://otexts.com/fpp3/">Forecasting: Principles and Practice</a> and a lot of the other work by <a href="https://robjhyndman.com/">Rob Hyndman</a>.</p>
-<p>A very useful set of tools to allow times-series work in R is the set of packages called <a href="https://tidyverts.org/">the tidyverts</a>. The <a href="https://business-science.github.io/modeltime/"><code>modeltime</code></a> <code>R</code> package allows one to use the <code>tidymodels</code> framework to analyze time-series data.</p>
+<p>Time series are a specialized data type that are autocorrelated, and we can therefore get better predictions by using specialized models that take this data structure into account. A good resource is the free textbook <a href="https://otexts.com/fpp3/"><em>Forecasting: Principles and Practice</em></a> and a lot of the other work by <a href="https://robjhyndman.com/">Rob Hyndman</a>.</p>
+<p>A very useful set of tools to allow times-series work in R is the set of packages called the <a href="https://tidyverts.org/"><code>tidyverts</code></a>. The <a href="https://business-science.github.io/modeltime/"><code>modeltime</code></a> <code>R</code> package allows one to use the <code>tidymodels</code> framework to analyze time-series data.</p>
 <p>CRAN also has a <a href="https://cran.r-project.org/web/views/TimeSeries.html">Task View for <em>Time Series Analysis</em>.</a> (A <em>Task View</em> on CRAN is a site that tries to combine and summarize various R packages for a specific topic). Another task view that deals with longitudinal/time-series data is the <a href="https://cran.r-project.org/web/views/Survival.html"><em>Survival Analysis</em> Task View</a>.</p>
 </section>
 <section id="spatial-data" class="level1">
 <h1>Spatial data</h1>
-<p>Like time series data, spatial data also feature autocorrelation, but typically in two dimensions. (I.e., latitude and longitude.) Spatiotemporal data, typically collected as repeated measurements of spatial data over time, is also somewhat common. One could also have an elevation coordinate and have 3D (or even 4D spatiotemporal data) spatial data, but most analyses focus on 2D spatial autocorrelation structures.</p>
+<p>Like time series data, spatial data also feature autocorrelation, but typically in two dimensions. (i.e., latitude and longitude.) Spatiotemporal data, typically collected as repeated measurements of spatial data over time, is also somewhat common. One could also have an elevation coordinate and have 3D (or even 4D spatiotemporal data) spatial data, but most analyses focus on 2D spatial autocorrelation structures.</p>
 <p>While there is (to my knowledge) no current way to fit specific spatial models in <code>tidymodels</code> (i.e.&nbsp;no <code>modeltime</code> analogue), one can use spatial resampling through the <a href="https://spatialsample.tidymodels.org/"><code>spatialsample</code></a> package, which provides resampling methods that take spatial autocorrelation into account.</p>
-<p>You can find a community-curated list of resources for spatial data in <a href="https://www.bigbookofr.com/geospatial.html">the Big Book of R</a> or in the <a href="https://cran.r-project.org/web/views/Spatial.html">spatial data CRAN task view</a>.</p>
+<p>You can find a community-curated list of resources for spatial data in <a href="https://www.bigbookofr.com/geospatial.html">The Big Book of R</a> or in the <a href="https://cran.r-project.org/web/views/Spatial.html"><em>spatial data</em> CRAN task view</a>.</p>
 </section>
 <section id="text" class="level1">
 <h1>Text</h1>
-<p>Working with and analyzing larger sections of text is becoming increasingly important. Complex and powerful AI tools (e.g., ChatGPT) have become rather good at working with text. The analysis of text often goes by the term <em>natural language processing</em>. Such text analysis will continue to increase in importance, given the increasing data streams of that type. If you are interested in doing full analyses of text data, the <a href="https://juliasilge.github.io/tidytext/"><code>tidytext</code> R package</a> and the <a href="https://www.tidytextmining.com/">Text mining with R book</a> are great resources. A short introduction to this topic is <a href="https://rafalab.github.io/dsbook/text-mining.html">The <em>text mining</em> chapter (27) of IDS</a>.</p>
+<p>Working with and analyzing larger sections of text is becoming increasingly important. Complex and powerful AI tools (e.g., ChatGPT) have become rather good at working with text. The analysis of text often goes by the term <em>natural language processing</em>. Such text analysis will continue to increase in importance, given the increasing data streams of that type. If you are interested in doing full analyses of text data, the <a href="https://juliasilge.github.io/tidytext/"><code>tidytext</code> R package</a> and the <a href="https://www.tidytextmining.com/"><em>Text mining with R</em> book</a> are great resources. A short introduction to this topic is the <a href="https://rafalab.github.io/dsbook/text-mining.html">Text Mining chapter (27) of <em>IDS</em></a>.</p>
 </section>
 <section id="genetics-and--omics-data" class="level1">
 <h1>Genetics and -omics data</h1>
@@ -682,7 +682,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="further-reading" class="level1">
 <h1>Further reading</h1>
-<p>See the references provided in the sections above, as well as the general references on the course website.</p>
+<p>See the references provided in the sections above, as well as the <a href="../../resources/Course_Resources.html"><strong>Resources</strong></a> section on the course website.</p>
 
 
 </section>
