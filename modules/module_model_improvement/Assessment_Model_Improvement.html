@@ -230,7 +230,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#model-1-evaluation" id="toc-model-1-evaluation" class="nav-link" data-scroll-target="#model-1-evaluation">Model 1 evaluation</a></li>
   <li><a href="#alternative-model" id="toc-alternative-model" class="nav-link" data-scroll-target="#alternative-model">Alternative model</a></li>
   <li><a href="#wrap-up-part-1" id="toc-wrap-up-part-1" class="nav-link" data-scroll-target="#wrap-up-part-1">Wrap up part 1</a></li>
-  <li><a href="#continous-outcome" id="toc-continous-outcome" class="nav-link" data-scroll-target="#continous-outcome">Continous outcome</a></li>
+  <li><a href="#continuous-outcome" id="toc-continuous-outcome" class="nav-link" data-scroll-target="#continuous-outcome">Continuous outcome</a></li>
   <li><a href="#wrap-up-part-2" id="toc-wrap-up-part-2" class="nav-link" data-scroll-target="#wrap-up-part-2">Wrap up part 2</a></li>
   <li><a href="#test-and-website-update" id="toc-test-and-website-update" class="nav-link" data-scroll-target="#test-and-website-update">Test and website update</a></li>
   <li><a href="#looking-ahead" id="toc-looking-ahead" class="nav-link" data-scroll-target="#looking-ahead">Looking ahead</a></li>
@@ -263,7 +263,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">2023-12-11</p>
+      <p class="date-modified">2023-12-12</p>
     </div>
   </div>
     
@@ -287,17 +287,17 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="data-splitting" class="level2">
 <h2 class="anchored" data-anchor-id="data-splitting">Data splitting</h2>
-<p>Write code that takes the data and splits it randomly into a train and test that, following for instance the example in the <a href="https://www.tidymodels.org/start/recipes/">Data Splitting section of the Get Started tidymodels tutorial</a>.</p>
+<p>Write code that takes the data and splits it randomly into a train and test that, following for instance the example in the <a href="https://www.tidymodels.org/start/recipes/">Data Splitting section of the Get Started <code>tidymodels</code> tutorial</a>.</p>
 </section>
 <section id="workflow-creation-and-model-fitting" class="level2">
 <h2 class="anchored" data-anchor-id="workflow-creation-and-model-fitting">Workflow creation and model fitting</h2>
-<p>Next, following the example in the <a href="https://www.tidymodels.org/start/recipes/">Create Recipes section of the Get Started tidymodels tutorial</a>, create a simple recipe that fits a logistic model to our <strong>categorical outcome of interest</strong>, using all predictors. (We start with categorical and all predictors since that’s the closest to the shown example). For now, you can ignore the concept of <code>roles</code> and <code>features</code> they mention.</p>
+<p>Next, following the example in the <a href="https://www.tidymodels.org/start/recipes/">Create Recipes section of the Get Started <code>tidymodels</code> tutorial</a>, create a simple recipe that fits a logistic model to our <strong>categorical outcome of interest</strong>, using all predictors. (We start with categorical and all predictors since that’s the closest to the shown example). For now, you can ignore the concept of <code>roles</code> and <code>features</code> they mention.</p>
 <p>Set a model as you did in the previous exercise, then use the <code>workflow()</code> function to create a simple workflow that fits a logistic model to all predictors using the <code>glm</code> engine. To that end, follow the <em>Fit a model with a recipe</em> section of the tutorial and adjust for your case.</p>
 <p>You should end up with a fit object similar to the one shown at the end of that section in the tutorial - of course, yours will look somewhat different since you are using a different dataset, but overall things should look similar.</p>
 </section>
 <section id="model-1-evaluation" class="level2">
 <h2 class="anchored" data-anchor-id="model-1-evaluation">Model 1 evaluation</h2>
-<p>Follow the example in the <em>Use a trained workflow to predict</em> section of the tutorial to look at the predictions, ROC curve and ROC-AUC for your data. Apply it to both the training and the test data. ROC curve analysis and ROC-AUC is another common performance measure/metric for categorical outcomes. If you are not familiar with it, you can read more about them by following the link in the tutorial. It’s not too important to go into the details for now. The focus here is on getting the code to work. In general, a ROC-AUC of 0.5 means the model is no good, 1 is a perfect model. Generally, somewhere above 0.7 do people think the model might be useful. If your model has a ROC-AUC a lot less than 0.5, you likely have an issue with how your factors are coded or how tidymodels is interpreting them.</p>
+<p>Follow the example in the <em>Use a trained workflow to predict</em> section of the tutorial to look at the predictions, ROC curve and ROC-AUC for your data. Apply it to both the training and the test data. ROC curve analysis and ROC-AUC is another common performance measure/metric for categorical outcomes. If you are not familiar with it, you can read more about them by following the link in the tutorial. It’s not too important to go into the details for now. The focus here is on getting the code to work. In general, a ROC-AUC of 0.5 means the model is no good, 1 is a perfect model. Generally, somewhere above 0.7 do people think the model might be useful. If your model has a ROC-AUC a lot less than 0.5, you likely have an issue with how your factors are coded or how <code>tidymodels</code> is interpreting them.</p>
 </section>
 <section id="alternative-model" class="level2">
 <h2 class="anchored" data-anchor-id="alternative-model">Alternative model</h2>
@@ -305,10 +305,10 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="wrap-up-part-1" class="level2">
 <h2 class="anchored" data-anchor-id="wrap-up-part-1">Wrap up part 1</h2>
-<p>Make sure everything runs and works as expected. Also make sure everyting is well commented/documented/explained! Then commit, push and tell your classmate that they can take over. <strong>Finish this by Wednesday.</strong></p>
+<p>Make sure everything runs and works as expected. Also make sure everything is well commented/documented/explained! Then commit, push and tell your classmate that they can take over. <strong>Finish this by Wednesday.</strong></p>
 </section>
-<section id="continous-outcome" class="level2">
-<h2 class="anchored" data-anchor-id="continous-outcome">Continous outcome</h2>
+<section id="continuous-outcome" class="level2">
+<h2 class="anchored" data-anchor-id="continuous-outcome">Continuous outcome</h2>
 <p>Fork and clone (or if you are added as collaborator, clone directly) your classmate’s repository. Open their <code>modeleval.qmd</code> file. <strong>Add a heading at the bottom that says <code># This section added by YOURFULLNAME</code>. I need this so I can grade accordingly.</strong></p>
 <p>Add code that repeats the above steps, but now fits linear models to the continuous outcome. One model with all predictors, one model with just the main predictor. For that, you need to change your metric. RMSE is a good one to choose. You should find that a lot of the code your classmate wrote can copied/pasted/re-used with only minimal modifications. Make sure to add comments/documentation.</p>
 </section>

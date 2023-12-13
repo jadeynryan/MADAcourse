@@ -617,7 +617,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">2023-12-11</p>
+      <p class="date-modified">2023-12-12</p>
     </div>
   </div>
     
@@ -645,7 +645,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="hierarchical-data" class="level1">
 <h1>Hierarchical data</h1>
-<p>This type of data is actually quite common. A hierarchy (also at times called multi-level or nesting structure) occurs when there is some type of grouping inherent. For instance, if you analyze heart attacks from different hospitals, there might be systematic differences between hospitals that are worth taking into account. You can then build models that take that into account. I think there is a strong case to be made that one should often start with a hierarchical modeling approach, and only drop it if one is convinced that there are no systematic differences in the data. Unfortunately, such hierarchical models are still a little bit harder to implement, and often a lot harder to understand and interpret. For such models, a Bayesian framework is often very useful. A good introductory resource for hierarchical modeling, and especially how to do it with <code>R</code>, is <a href="https://xcelab.net/rm/statistical-rethinking/">Statistical Rethinking</a> (the second half of the book). The new edition of R4DS has a chapter on <a href="https://r4ds.hadley.nz/rectangling.html">working with hierarchical data</a> (but does not cover the fitting/analysis part.) There is also a CRAN Task view that <a href="https://cran.r-project.org/web/views/MixedModels.html">lists R packages relevant to hierarchical modeling</a>.</p>
+<p>This type of data is actually quite common. A hierarchy (also at times called multi-level or nesting structure) occurs when there is some type of grouping inherent. For instance, if you analyze heart attacks from different hospitals, there might be systematic differences between hospitals that are worth taking into account. You can then build models that take that into account. I think there is a strong case to be made that one should often start with a hierarchical modeling approach, and only drop it if one is convinced that there are no systematic differences in the data. Unfortunately, such hierarchical models are still a little bit harder to implement, and often a lot harder to understand and interpret. For such models, a Bayesian framework is often very useful. A good introductory resource for hierarchical modeling, and especially how to do it with <code>R</code>, is <a href="https://xcelab.net/rm/statistical-rethinking/"><em>Statistical Rethinking</em></a> (the second half of the book). The new edition of <em>R4DS</em> has a chapter on <a href="https://r4ds.hadley.nz/rectangling.html">working with hierarchical data</a> (but does not cover the fitting/analysis part.) There is also a CRAN Task view that <a href="https://cran.r-project.org/web/views/MixedModels.html">lists R packages relevant to hierarchical modeling</a>.</p>
 </section>
 <section id="time-series-data" class="level1">
 <h1>Time-series data</h1>
@@ -657,7 +657,7 @@ ul.task-list li input[type="checkbox"] {
 <h1>Spatial data</h1>
 <p>Like time series data, spatial data also feature autocorrelation, but typically in two dimensions. (i.e., latitude and longitude.) Spatiotemporal data, typically collected as repeated measurements of spatial data over time, is also somewhat common. One could also have an elevation coordinate and have 3D (or even 4D spatiotemporal data) spatial data, but most analyses focus on 2D spatial autocorrelation structures.</p>
 <p>While there is (to my knowledge) no current way to fit specific spatial models in <code>tidymodels</code> (i.e.&nbsp;no <code>modeltime</code> analogue), one can use spatial resampling through the <a href="https://spatialsample.tidymodels.org/"><code>spatialsample</code></a> package, which provides resampling methods that take spatial autocorrelation into account.</p>
-<p>You can find a community-curated list of resources for spatial data in <a href="https://www.bigbookofr.com/geospatial.html">The Big Book of R</a> or in the <a href="https://cran.r-project.org/web/views/Spatial.html"><em>spatial data</em> CRAN task view</a>.</p>
+<p>You can find a community-curated list of resources for spatial data in <a href="https://www.bigbookofr.com/geospatial.html">The Big Book of R</a> or in the <a href="https://cran.r-project.org/web/views/Spatial.html"><em>Spatial Data</em> CRAN task view</a>.</p>
 </section>
 <section id="text" class="level1">
 <h1>Text</h1>

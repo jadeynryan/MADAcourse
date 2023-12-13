@@ -617,7 +617,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">2023-12-11</p>
+      <p class="date-modified">2023-12-12</p>
     </div>
   </div>
     
@@ -640,7 +640,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="introduction" class="level1">
 <h1>Introduction</h1>
-<p>Way back at the <a href="../../modules/module_intro_tools/Tools_Reproducibility.html">beginning of the course</a>, we briefly discussed reproducibility. Throughout the course, we emphasized the importance to do analyses in a reproducible (and thus generally automated/scripted) manner. In this module, we’ll discuss a bit more what reproducible research means and entails, current trends towards open science, and why you pretty much need to have a solid grasp on reproducible research strategies in the future.</p>
+<p>Way back at the <a href="../../modules/module_intro_tools/Tools_Reproducibility.html"><strong>beginning of the course</strong></a>, we briefly discussed reproducibility. Throughout the course, we emphasized the importance to do analyses in a reproducible (and thus generally automated/scripted) manner. In this module, we’ll discuss a bit more what reproducible research means and entails, current trends towards open science, and why you pretty much need to have a solid grasp on reproducible research strategies in the future.</p>
 </section>
 <section id="federal-open-science-requirements" class="level1">
 <h1>Federal open science requirements</h1>
@@ -681,26 +681,26 @@ ul.task-list li input[type="checkbox"] {
 <li><strong>I</strong>nteroperable: data should be in standardized formats, using standard vocabulary. You should be specific if your data is derived from another dataset or if the user will need other related datasets.</li>
 <li><strong>R</strong>eusable: data should be documented and version-controlled when you release it, with clear descriptions of what information is contained in the data, who can use the data, and for what purposes.</li>
 </ol>
-<p>The FAIR standard was originally described in this <a href="https://www.nature.com/articles/sdata201618">2016 publication</a>. Another great resource is the <a href="https://www.go-fair.org/fair-principles/">GO FAIR initative</a>. It is worth taking a short look at both these resources.</p>
+<p>The FAIR standard was originally described in this <a href="https://www.nature.com/articles/sdata201618">2016 publication</a>. Another great resource is the <a href="https://www.go-fair.org/fair-principles/">GO FAIR initiative</a>. It is worth taking a short look at both these resources.</p>
 <p>Of course dealing with things like data use agreements and individual privacy is paramount, so 100% achieving these goals all the time is not feasible. Sometimes you might need to use <a href="https://en.wikipedia.org/wiki/Synthetic_data">synthetic data</a> based on your real data, or remove certain information from your data to protect privacy, or require a data use agreement before you can distribute the data to individuals. We should strive for data to be as FAIR as possible, but protecting individual privacy is equally important!</p>
 <p>In general, a lot of authors still hide behind “I can’t share my data, it’s confidential” as an excuse for not having to share. Most of the time, it is possible to share de-identified data without confidentiality problems. Hopefully, the near future will make data sharing much more common and also easier.</p>
 </section>
 <section id="reproducibility-and-replicability-too" class="level1">
 <h1>Reproducibility (and replicability too)</h1>
 <p>We discussed <strong>reproducibility</strong> in <a href="../../modules/module_intro_tools/Tools_Reproducibility.html">our previous reading</a>, revisit it if you need a refresher. In one sentence, <em>your research is reproducible if another scientist can repeat your methods on your data and get the same results.</em> That is, someone else can take your code and data, rerun all your code, and get the same answers that you got in your paper.</p>
-<p>An important and related issue is <strong>replicability</strong> -— you’ve probably heard of the “replication crisis” in science. If not, see for instance this <a href="https://en.wikipedia.org/wiki/Replication_crisis">Wikipedia page</a>. In one sentence, <em>your research is replicable if someone else can follow your methods and materials to collect new data, analyze their data, and get similar results</em>. Of course in social and semi-social sciences (like epidemiology), when your results often depend on the target population of interest and are expected to vary over time, replicability can be a bit more nuanced than in an experimental field, where experiments should pretty much control for anything that you aren’t interested in.</p>
+<p>An important and related issue is <strong>replicability</strong> —- you’ve probably heard of the “replication crisis” in science. If not, see for instance this <a href="https://en.wikipedia.org/wiki/Replication_crisis">Wikipedia page</a>. In one sentence, <em>your research is replicable if someone else can follow your methods and materials to collect new data, analyze their data, and get similar results</em>. Of course in social and semi-social sciences (like epidemiology), when your results often depend on the target population of interest and are expected to vary over time, replicability can be a bit more nuanced than in an experimental field, where experiments should pretty much control for anything that you aren’t interested in.</p>
 <p>Note that replicability is somewhat related to the analysis topic of generalizability/portability we discussed. The difference is that we focused on analysis approaches that would lead to replicable modeling/analysis results using other data sources. More broadly, one wants to be able to replicate overall findings if one were to repeat the full study, including collection of new data. This is important, but for purposes of analysis, the data is considered given, and the focus is on reproducibility/replicability of the data analysis part.</p>
 </section>
 <section id="inclusivity" class="level1">
 <h1>Inclusivity</h1>
 <p>The topic of inclusivity in data science is heavily tied into the idea of data ethics – critical thinking about the potential results and consequences of the products we create is crucial in data science. Many of you have some public health training, and are therefore likely familiar with the <a href="https://www.hhs.gov/ohrp/regulations-and-policy/belmont-report/index.html">Belmont Report</a>.</p>
-<p>Regardless of your scientific background, when working with data (especially human subjects data), the guiding principles of respect for persons, beneficience, and justice should be critical considerations for all of our research.</p>
+<p>Regardless of your scientific background, when working with data (especially human subjects data), the guiding principles of respect for persons, beneficence, and justice should be critical considerations for all of our research.</p>
 <p>For some additional reading on inclusivity and data science ethics, see for instance these resources:</p>
 <ul>
 <li>Elaine O Nsoesie, Sandro Galea, Towards better Data Science to address racial bias and health equity, PNAS Nexus, Volume 1, Issue 3, July 2022, pgac120, https://doi.org/10.1093/pnasnexus/pgac120</li>
 <li>O’Neil, Cathy. Weapons of math destruction. Crown, 2016. ISBN: 978-0553418811.</li>
 <li>Noble, Safiya Umoja. Algorithms of Oppression: How Search Engines Reinforce Racism. NYU Press, 2018. ISBN: 978-1479837243.</li>
-<li><a href="https://datapractices.org/manifesto/">https://datapractices.org/manifesto/</a></li>
+<li><a href="https://datapractices.org/manifesto/" class="uri">https://datapractices.org/manifesto/</a></li>
 <li>Floridi L, Taddeo M. What is data ethics?. Philos Trans A Math Phys Eng Sci. 2016;374(2083):20160360. doi:10.1098/rsta.2016.0360</li>
 </ul>
 </section>
@@ -712,7 +712,7 @@ ul.task-list li input[type="checkbox"] {
 <h1>Further reading</h1>
 <p>Everything we discussed throughout this course, and this short introduction, hopefully conveyed the message that Open Science is an important topic to think about and strive toward. The importance of the topic has been increasing in recent years. It is useful to stay somewhat informed. Here are a few places you can find more open science resources.</p>
 <ul>
-<li>The Center for Open Science, a nonprofit dedicated to promoting open science practices and community change, maintains <a href="https://www.cos.io/blog">a blog</a> with several thought provoking readings.</li>
+<li>The Center for Open Science, a nonprofit dedicated to promoting open science practices and community change, maintains a <a href="https://www.cos.io/blog">blog</a> with several thought provoking readings.</li>
 <li>Statistician Andrew Gelman sometimes writes about open science, mostly from a statistical perspective and has some nice comments on replication. <a href="http://www.stat.columbia.edu/~gelman/research/published/ChanceEthics14.pdf">(1)</a> <a href="https://www.americanscientist.org/article/the-statistical-crisis-in-science">(2)</a></li>
 <li><a href="https://www.fosteropenscience.eu/">FOSTER</a> is a European organization with a set of free courses on open science principles.</li>
 </ul>
